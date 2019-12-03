@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Personal
+        link(href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed", rel="stylesheet")
+        link(rel="stylesheet", href="css/owlcarousel/owl.carousel.min.css")
+        link(rel="stylesheet", href="css/owlcarousel/owl.theme.default.min.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/homepage.css")
+    body
+        //- Start Navbar
+        nav(class="navbar fixed-top navbar-expand-lg navbar-light")
+            .container
+                a(class="navbar-brand", href="#") Personal
+                button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbar-toggle", aria-controls="navbar-toggle", aria-expanded="false", aria-label="toggle navigation")
+                    span.navbar-toggler-icon
+
+                div(class="collapse navbar-collapse", id="navbar-toggle")
+                    ul(class="navbar-nav ml-auto")
+                        li(class="nav-item active")
+                            a(class="nav-link", href="#", data-scroll="home") Home
+                                span.sr-only (current)
+                        li(class="nav-item")
+                            a(class="nav-link", href="#", data-scroll="about") About Me
+                        li(class="nav-item")
+                            a(class="nav-link", href="#", data-scroll="our-services") Services
+                        li(class="nav-item")
+                            a(class="nav-link", href="#", data-scroll="portfolio") Portfolio
+                        li(class="nav-item")
+                            a(class="nav-link", href="#", data-scroll="our-blog") My Blog
+                        li(class="nav-item")
+                            a(class="nav-link", href="#", data-scroll="contact") Contact
+        //- End Navbar
+
+        //- Start Home
+        section(class="home", id="home")
+            .container
+                .row
+                    .col-md-6
+                        .content-left
+                            h5 Hey There!
+                            h1 I'm Mohamed A Freelance Front-End Developer
+                            a.btn1(href="#") Hire Me Now
+                            a.btn2(href="#") Download CV
+
+                    .col-md-6
+                        .content-right
+        //- End Home
+
+        //- Start About
+        section(class="about" id="about")
+            .container
+                .row
+                    div(class="col-md-6")
+                        .content-left
+                            .block
+                                .icon 01
+                                h4 Clean Code
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto velit voluptatibus quas quos dolorem nam natus, neque suscipit voluptate vitae nihil!
+                            .block
+                                .icon 02
+                                h4 Full Responsive
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto velit voluptatibus quas quos dolorem nam natus, neque suscipit voluptate vitae nihil!
+                            .block
+                                .icon 03
+                                h4 UI & UX
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto velit voluptatibus quas quos dolorem nam natus, neque suscipit voluptate vitae nihil!
+
+                    div(class="col-md-6")
+                        .content-right
+                            div(class="icon")
+                                i(class="fas fa-user-cog fa-3x")
+                            .burst-8
+                            h2 Experienced
+                            p.text-center Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aspernatur corrupti unde corporis aut, maiores sequi error hic, ipsum, enim perferendis et? Nam quod velit, magnam autem aut dolores cum.
+                            a.btn1(href="#") Contact Now
+        //- End About
+
+        //- Start Services
+        section(class="our-services", id="our-services")
+            .container
+                .row
+                    h2 Service I Provide
+                        br
+                        | For You
+
+            .our-slide
+                .container
+                    .row
+                        div(class="services owl-carousel1 owl-carousel owl-theme text-center")
+                            div(class="service col")
+                                .icon
+                                    i(class="fas fa-globe-africa fa-3x")
+                                .burst-8
+                                h4 Web Design
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque voluptates.
+                            div(class="service col")
+                                .icon
+                                    i(class="fas fa-globe-africa fa-3x")
+                                .burst-8
+                                h4 Web Design
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque voluptates.
+                            div(class="service col")
+                                .icon
+                                    i(class="fas fa-globe-africa fa-3x")
+                                .burst-8
+                                h4 Web Design
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque voluptates.
+                            div(class="service col")
+                                .icon
+                                    i(class="fas fa-globe-africa fa-3x")
+                                .burst-8
+                                h4 Web Design
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque voluptates.
+                            div(class="service col")
+                                .icon
+                                    i(class="fas fa-globe-africa fa-3x")
+                                .burst-8
+                                h4 Web Design
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque voluptates.
+        //- End Services
+
+        //- Start Portfolio
+        section(class="portfolio", id="portfolio")
+            .container
+                h2 Let's See My Portfolio
+
+                .row
+                    .content-portfolio
+                        ul(class="list-unstyled text-center")
+                            .row
+                                li(class="col active", data-filter="all") All
+                                li(class="col", data-filter=".web-design") Website Design
+                                li(class="col", data-filter=".brand") Brand Design
+                                li(class="col", data-filter=".ui-ux") UI&UX Research
+                                li(class="col", data-filter=".app-design") App Design
+
+                .row(class="mixitup")
+                    div(class="port mix web-design col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/w1.png", alt="1")
+                        .title
+                            h4 CV Template
+                    div(class="port mix web-design col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/w2.png", alt="2")
+                        .title
+                            h4 Company
+                    div(class="port mix brand col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/u3.jpg", alt="3")
+                        .title
+                            h4 Art Design
+                    div(class="port mix brand col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/u4.jpg", alt="4")
+                        .title
+                            h4 3d Design
+                    div(class="port mix ui-ux col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/b5.jpg", alt="5")
+                        .title
+                            h4 InDesign
+                    div(class="port mix ui-ux col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/b6.jpg", alt="6")
+                        .title
+                            h4 InDesign
+                    div(class="port mix app-design col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/b7.jpg", alt="7")
+                        .title
+                            h4 App Design
+                    div(class="port mix app-design col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/m8.jpg", alt="8")
+                        .title
+                            h4 Music App
+                    div(class="port mix app-design col-md-4", data-order="1")
+                        .overlay
+                            h4 CV Template
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            i(class="icon fas fa-link fa-2x")
+                        img(src="./img/portfolio/m9.jpg", alt="9")
+                        .title
+                            h4 Music App
+                
+                a.btn1 See More
+        //- End Portfolio
+
+        //- Start Client
+        section(class="client text-center", id="client")
+            .container
+                h2 What Client Say
+
+                .row
+                    div(class="col content-client")
+                        img(src="./img/client/1.png", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aut debitis magnam.
+                        h5 Mohamed Hassan
+                    div(class="col content-client")
+                        img(src="./img/client/5.jpg", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aut debitis magnam.
+                        h5 Mohamed Hassan
+                    div(class="col content-client")
+                        img(src="./img/client/6.jpg", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aut debitis magnam.
+                        h5 Mohamed Hassan
+                    div(class="col content-client")
+                        img(src="./img/client/7.jpg", alt="")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aut debitis magnam.
+                        h5 Mohamed Hassan
+        //- End Client
+
+        //- Start Blogs
+        section(class="our-blog", id="our-blog")
+            .container
+                .row
+                    div(class="col-5 content-left")
+                        h2 Latest Blogs
+                            br
+                            | From Me
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquid, corporis ut distinctio a perspiciatis, ad culpa quasi adipisci quidem similique sunt maxime consequatur fugiat? Voluptatem obcaecati sunt architecto delectus.
+                        a.btn1 Read More
+
+                    div(class="col-7 content-right")
+                        .row
+                            div(class="blogs owl-carousel2 owl-carousel owl-theme")
+                                div(class="col blog")
+                                    img(src="./img/blog/1.png", alt="")
+                                    h4 What is UI design?
+                                    .info
+                                        span Feb 13, 2019
+                                        p See More
+                                div(class="col blog")
+                                    img(src="./img/blog/1.png", alt="")
+                                    h4 What is UI design?
+                                    .info
+                                        span Feb 13, 2019
+                                        p See More
+                                div(class="col blog")
+                                    img(src="./img/blog/1.png", alt="")
+                                    h4 What is UI design?
+                                    .info
+                                        span Feb 13, 2019
+                                        p See More
+                                div(class="col blog")
+                                    img(src="./img/blog/1.png", alt="")
+                                    h4 What is UI design?
+                                    .info
+                                        span Feb 13, 2019
+                                        p See More
+        //- End Blogs
+
+        //- Start Contact
+        section(class="contact", id="contact")
+            .container
+                h2 Let's Do Something Big
+                .row
+                    div(class="col")
+                        input(class="fl-r" type="text", placeholder="Enter your name")
+                    div(class="col")
+                        input(type="text", placeholder="Enter your email")
+                        a.btn1 I'm Ready
+        //- End Contact
+
+        //- Start Footer
+        footer
+            .container
+                .row
+                    div(class="col-md-2 col-xs-6")
+                        h4 Product
+                        ul.list-unstyled
+                            li Designer
+                            li Find Designer
+                            li I'm a Designer
+                    div(class="col-md-2 col-xs-6")
+                        h4 Company
+                        ul.list-unstyled
+                            li The Team
+                            li About Us
+                            li Blog
+                    div(class="col-md-2 col-xs-6")
+                        h4 Resources
+                        ul.list-unstyled
+                            li Support
+                            li Contact
+                            li Terma & Service
+                    div(class="col-md-2 col-xs-6")
+                        h4.logo Logo
+                        h4.follow Follow me on
+                    div(class="icons col-md-4 col-xs-6")
+                        .icon
+                            i(class="fab fa-facebook-f")
+                        .icon
+                            i(class="fab fa-twitter")
+                        .icon
+                            i(class="fab fa-linkedin-in")
+                        .icon
+                            i(class="fab fa-instagram")
+                        .icon
+                            i(class="fab fa-youtube")
+
+                .copyright(class="text-center")
+                    p 2018 &copy; Mohamed Hassan. All Right Reserved
+
+        //- End Footer
+
+        script(src="js/jquery-3.3.1.min.js")
+        script(src="js/all.min.js")
+        script(src="js/owl.carousel.min.js")
+        script(src="js/bootstrap.min.js")
+        script(src="js/mixitup.min.js")
+        script(src="js/custom.js")

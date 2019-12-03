@@ -1,0 +1,24 @@
+.btn1,
+.btn2 {
+    padding: 10px 25px !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px #02020261;
+    margin-right: 30px;
+    @include prefixer(transition, all .5s ease-in-out, webkit moz o);
+}
+
+.btn1 {
+    background-color: $btn-color;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: $btn-color !important;
+}
+.btn2:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: $main-color !important;
+}
